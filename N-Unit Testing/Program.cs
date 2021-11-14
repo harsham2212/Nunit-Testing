@@ -9,7 +9,7 @@ namespace N_Unit_Testing
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter your Choice Number to Execute the NUnit Program \n 1. Vending Machine \n 2. DayOFWeek \n 3. Temperature Conversion \n  4. Exit \n ");
+                Console.WriteLine("Enter your Choice Number to Execute the NUnit Program \n 1. Vending Machine \n 2. DayOFWeek \n 3. Temperature Conversion \n 4. MonthlyPaymeny \n 5. Exit \n ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -34,6 +34,10 @@ namespace N_Unit_Testing
                         tc.Calculate(temp);
                         break;
                     case 4:
+                        MonthlyPayment mp = new MonthlyPayment();
+                        mp.Payment();
+                        break;
+                    case 5:
                         flag = false;
                         break;
                 }
