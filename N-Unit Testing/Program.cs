@@ -9,7 +9,7 @@ namespace N_Unit_Testing
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter your Choice Number to Execute the NUnit Program \n 1. Vending Machine \n 2. Exit \n ");
+                Console.WriteLine("Enter your Choice Number to Execute the NUnit Program \n 1. Vending Machine \n 2. DayOFWeek \n  3. Exit \n ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -20,6 +20,14 @@ namespace N_Unit_Testing
                         vm.Calculate(amount);
                         break;
                     case 2:
+                        Console.WriteLine("Enter the Day: ");
+                        int day = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the Month: ");
+                        int month = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the Year: ");
+                        int year = Convert.ToInt32(Console.ReadLine());
+                        break;
+                    case 3:
                         flag = false;
                         break;
                 }
