@@ -18,7 +18,7 @@ namespace N_Unit_Testing
                     amount = amount - arr[i] * notes[i];
                 }
             }
-            for (int i = 0; i < 9; i++)
+            for (int i = 0; i < arr.length; i++)
             {
                 if (arr[i] != 0)
                 {
